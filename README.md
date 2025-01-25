@@ -12,6 +12,11 @@ This project is an exploration of the process of building and developing a Chrom
 ## Getting Started
 
 Follow the steps below to set up and activate the extension in your Chrome browser.
+- In your chrome browser settings, search for "Manage Extensions"
+- Click on the developer mode.
+- Click on "Load Unpack" button.
+- Select this repository after cloning.
+- Activate the extension once it shows up under "All Extensions". 
 
 ### Prerequisites
 - Google Chrome (Latest Version)

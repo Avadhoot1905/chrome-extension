@@ -1,4 +1,4 @@
-async function dataFectch(){
+async function dataFetch(){
     var number = Math.floor(Math.random() * 1084) + 1;
     fetch(`https://picsum.photos/id/${number}/200/300`)
     .then(response => response.blob())
@@ -13,4 +13,4 @@ async function dataFectch(){
     console.log("Working");
 }
 
-dataFectch()
+dataFetch()

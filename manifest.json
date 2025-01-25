@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Hello World",
+    "version": "1.0.0",
+    "description": "Learning to make an extension",
+    "author":"Avadhoot",
+    "icons": {
+      "48": "symbol.png"
+    },
+    "action": {
+        "default_popup":"index.html",
+        "default_title":"Intro to extensions"
+    }
+  }

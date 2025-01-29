@@ -11,7 +11,7 @@ async function credentials() {
   console.log("Executing after");
 
   // Get saved data from Chrome storage
-  let savedData = await chrome.storage.sync.get(["wifiPassword", "wifiUsername"]);
+  let savedData = await chrome.storage.local.get(["wifiPassword", "wifiUsername"]);
 
   let usernameField = document.querySelector("input[name='userId']");
   let passwordField = document.querySelector("input[name='password']");

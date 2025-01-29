@@ -13,7 +13,7 @@ This Chrome extension automatically fills in your WiFi credentials on the login 
 
 1. **Download or Clone the Repository**  
    ```bash
-   git clone [https://github.com/Avadhoot1905/chrome-extension.git](https://github.com/Avadhoot1905/vit-wifi-password-manager)
+   git clone https://github.com/Avadhoot1905/chrome-extension.git
    cd chrome-extension
    ```
 

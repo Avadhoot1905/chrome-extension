@@ -1,31 +1,24 @@
-# Chrome Extension Development Exploration 
+# **WiFi Auto-Login Chrome Extension**  
 
-This project is an exploration of the process of building and developing a Chrome extension. The goal is to understand the structure, API, and functionality of Chrome extensions while implementing a useful tool.
+This Chrome extension automatically fills in your WiFi credentials on the login page and submits the form, saving you time and effort.  
 
-## Features (Planned)
-- [ ] Basic popup UI
-- [ ] Background script functionality
-- [ ] Content script for interacting with web pages
-- [ ] Storage API for saving data
-- [ ] Options page for customization
+### **Works only for students of VIT**
 
-## Getting Started
+## **Features**  
+✅ Autofills the WiFi username and password from Chrome's synced storage.  
+✅ Automatically submits the form once the credentials are filled.  
+✅ Works seamlessly on supported WiFi login portals.  
 
-Follow the steps below to set up and activate the extension in your Chrome browser.
-- In your chrome browser settings, search for "Manage Extensions"
-- Click on the developer mode.
-- Click on "Load Unpack" button.
-- Select this repository after cloning.
-- Activate the extension once it shows up under "All Extensions". 
+## **Installation**  
 
-### Prerequisites
-- Google Chrome (Latest Version)
-- Basic knowledge of JavaScript, HTML, and CSS
-- A code editor (VS Code recommended)
+1. **Download or Clone the Repository**  
+   ```bash
+   git clone https://github.com/yourusername/wifi-auto-login.git
+   cd wifi-auto-login
+   ```
 
-### Installation
+2. **Load the Extension in Chrome**  
+   1. Open **Chrome** and go to `chrome://extensions/`.  
+   2. Enable **Developer Mode** (top right corner).  
+   3. Click **Load Unpacked** and select the extension folder.  
 
-1. **Clone the Repository**
-   ```sh
-   git clone <repository-url>
-   cd <project-folder>

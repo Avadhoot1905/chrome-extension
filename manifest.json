@@ -1,14 +1,21 @@
-{
+  {
     "manifest_version": 3,
-    "name": "Hello World",
-    "version": "1.0.0",
-    "description": "Learning to make an extension",
-    "author":"Avadhoot",
-    "icons": {
-      "48": "symbol.png"
+    "name": "WiFi AutoFill",
+    "version": "1.0",
+    "description": "Automatically fills the WiFi password on login pages",
+    "permissions": ["storage"],
+    "host_permissions": ["http://phc.prontonetworks.com/cgi-bin/authlogin?URI=http://www.msftconnecttest.com/redirect"],
+    "background": {
+      "service_worker": "background.js"
     },
+    "content_scripts": [
+      {
+        "matches": ["http://phc.prontonetworks.com/cgi-bin/authlogin?URI=http://www.msftconnecttest.com/redirect"],
+        "js": ["fillCredentials.js"]
+      }
+    ],
     "action": {
-        "default_popup":"index.html",
-        "default_title":"Intro to extensions"
+      "default_popup": "index.html"
     }
   }
+  

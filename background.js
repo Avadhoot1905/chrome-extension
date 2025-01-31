@@ -6,3 +6,10 @@ chrome.runtime.onInstalled.addListener(async () => {
   console.log("Username:", savedData.wifiUsername);
   console.log("Password:", savedData.wifiPassword);
 });
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log("Closing tab");
+  if (message.action === "closeTab" && sender.tab) {
+    chrome.tabs.remove(sender.tab.id);
+  }
+});

@@ -3,7 +3,7 @@
     "name": "WiFi AutoFill",
     "version": "1.0",
     "description": "Automatically fills the WiFi password on login pages",
-    "permissions": ["storage"],
+    "permissions": ["storage","tabs"],
     "host_permissions": ["http://phc.prontonetworks.com/cgi-bin/authlogin?URI=http://www.msftconnecttest.com/redirect"],
     "background": {
       "service_worker": "background.js"

@@ -20,12 +20,8 @@ async function credentials() {
     usernameField.value = savedData.wifiUsername;
     passwordField.value = savedData.wifiPassword;
     document.querySelector(".loginbutton").click();
+    chrome.runtime.sendMessage({ action: "closeTab" });
 
-    // If the form has an automatic submit feature, trigger submit
-    let loginForm = passwordField.closest("form");
-    if (loginForm) {
-      loginForm.submit();
-    }
   }
 }
 
